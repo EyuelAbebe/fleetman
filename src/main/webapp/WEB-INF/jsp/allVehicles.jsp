@@ -3,7 +3,7 @@
 <h1>Vehicles Page</h1>
 
 <ul>
-    <c:forEach items="${vechiles}" var="vehicle">
+    <c:forEach items="${vehicles}" var="vehicle">
         <li>${vehicle}</li>
     </c:forEach>
 </ul>

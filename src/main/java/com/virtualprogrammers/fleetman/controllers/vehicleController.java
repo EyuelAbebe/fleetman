@@ -38,6 +38,7 @@ public class vehicleController {
 
     @RequestMapping(value = "/vehicle/{name}")
     public ModelAndView showVehicleByName(@PathVariable("name") String name){
-        throw new UnsupportedOperationException();
+        Vehicle vehicle = data.findByName(name);
+        return new ModelAndView("vehicleInfo", "vehicle", vehicle);
     }
 }
