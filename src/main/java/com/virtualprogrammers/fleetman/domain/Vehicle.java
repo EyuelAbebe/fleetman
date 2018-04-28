@@ -18,6 +18,13 @@ public class Vehicle {
     private String latLong;
     private String currentDriver;
 
+    public Vehicle() {
+    }
+
+    public Vehicle(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
